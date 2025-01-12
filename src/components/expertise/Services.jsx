@@ -96,7 +96,15 @@ const Services = () => {
   const handleScroll = (direction) => {
     const container = servicesRef.current;
     if (container) {
-      const scrollAmount = direction === "left" ? -360 : 360;
+      const isMobile = window.innerWidth <= 768;
+      const scrollAmount = isMobile
+        ? direction === "left"
+          ? -280
+          : 280
+        : direction === "left"
+        ? -360
+        : 360;
+
       container.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };

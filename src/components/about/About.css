@@ -135,6 +135,8 @@
 
   .about__img {
     justify-self: center;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .about__box {
@@ -142,6 +144,13 @@
     row-gap: 0.5rem;
     text-align: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__img {
+    max-height: 200px;
+    max-width: 200px;
   }
 }
 
@@ -159,6 +168,11 @@
     row-gap: 1.875rem;
   }
 
+  .about__img {
+    height: 130px;
+    width: 130px;
+  }
+
   .about__boxes {
     grid-template-columns: repeat(2, 150px);
     row-gap: 1.5rem;
@@ -169,6 +183,10 @@
 @media screen and (max-width: 576px) {
   .about__container {
     grid-template-columns: 320px;
+  }
+  .about__img {
+    height: 200px;
+    width: 200px;
   }
 }
 
