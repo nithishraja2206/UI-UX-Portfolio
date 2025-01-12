@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UI-UX-Portfolio/static/css/main.8e9951af.css",
-    "main.js": "/UI-UX-Portfolio/static/js/main.6628ee0b.js",
+    "main.css": "/UI-UX-Portfolio/static/css/main.51d30cc5.css",
+    "main.js": "/UI-UX-Portfolio/static/js/main.8a86ac8e.js",
     "static/media/sairam_incubation.png": "/UI-UX-Portfolio/static/media/sairam_incubation.40cf32329ae3f6a866bf.png",
     "static/media/Madrasda_Design.png": "/UI-UX-Portfolio/static/media/Madrasda_Design.6b516381ccf242a22103.png",
     "static/media/MichiganTech.png": "/UI-UX-Portfolio/static/media/MichiganTech.9047825ae37a0145f1e7.png",
@@ -18,25 +18,25 @@
     "static/media/about_me_portfolio.png": "/UI-UX-Portfolio/static/media/about_me_portfolio.2306e279a879015dde43.png",
     "static/media/home_portfolio.png": "/UI-UX-Portfolio/static/media/home_portfolio.06635578283bf11ea2ba.png",
     "static/media/logo_icon_portfolio.png": "/UI-UX-Portfolio/static/media/logo_icon_portfolio.040d59e85e31f25f8188.png",
-    "static/media/service-3.svg": "/UI-UX-Portfolio/static/media/service-3.c3882bb220c0141de50818280731650f.svg",
-    "static/media/service-9.svg": "/UI-UX-Portfolio/static/media/service-9.aec317818ccbc36429a0b4f05113fa00.svg",
-    "static/media/service-8.svg": "/UI-UX-Portfolio/static/media/service-8.f6211dd03769750c69743fac537e36bb.svg",
-    "static/media/service-4.svg": "/UI-UX-Portfolio/static/media/service-4.d6bde15924967c719702dd065b4681e9.svg",
-    "static/media/service-2.svg": "/UI-UX-Portfolio/static/media/service-2.7b552241f46e8fc1787ff542b963676b.svg",
-    "static/media/service-5.svg": "/UI-UX-Portfolio/static/media/service-5.cbe1113ea74c0b1edaf2039cca585b97.svg",
-    "static/media/service-6.svg": "/UI-UX-Portfolio/static/media/service-6.a7434b03f6121a7d4663889ad2ad56ff.svg",
-    "static/media/service-7.svg": "/UI-UX-Portfolio/static/media/service-7.ff236b9310f8ccfe3752f817bcfb7cf9.svg",
+    "static/media/service-3.svg": "/UI-UX-Portfolio/static/media/service-3.45a8360751dafbacf16ee30ba8944171.svg",
+    "static/media/service-9.svg": "/UI-UX-Portfolio/static/media/service-9.21781906743a905c217652e3ba054bf8.svg",
+    "static/media/service-8.svg": "/UI-UX-Portfolio/static/media/service-8.73bc063c23fcb9bd18bbf2a94a7ea9a7.svg",
+    "static/media/service-4.svg": "/UI-UX-Portfolio/static/media/service-4.6cef127f39472c096eab8c5575198262.svg",
+    "static/media/service-2.svg": "/UI-UX-Portfolio/static/media/service-2.496b67fe951c6e3de88e3c98e03f7ae0.svg",
+    "static/media/service-5.svg": "/UI-UX-Portfolio/static/media/service-5.38332e8477e96053b8f87c2b82e261d9.svg",
+    "static/media/service-6.svg": "/UI-UX-Portfolio/static/media/service-6.9240f78234a796a869507c043fc23af0.svg",
+    "static/media/service-7.svg": "/UI-UX-Portfolio/static/media/service-7.74b65ed164e40799f6a0ff26af926de7.svg",
     "static/media/avatar-3.svg": "/UI-UX-Portfolio/static/media/avatar-3.5bf46e6d1530bd73b02b567041e76e4d.svg",
     "static/media/avatar-4.svg": "/UI-UX-Portfolio/static/media/avatar-4.1859fab5f65d2a41fed620abbb0170e5.svg",
-    "static/media/service-1.svg": "/UI-UX-Portfolio/static/media/service-1.424e127a0115d839389ff019cdb93602.svg",
+    "static/media/service-1.svg": "/UI-UX-Portfolio/static/media/service-1.592340a1dcf343c4a0cccbdcd4b4a0f0.svg",
     "static/media/dots-bg-dark.svg": "/UI-UX-Portfolio/static/media/dots-bg-dark.3a79e4a2778386f14af1.svg",
     "static/media/dots-bg.svg": "/UI-UX-Portfolio/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
     "index.html": "/UI-UX-Portfolio/index.html",
-    "main.8e9951af.css.map": "/UI-UX-Portfolio/static/css/main.8e9951af.css.map",
-    "main.6628ee0b.js.map": "/UI-UX-Portfolio/static/js/main.6628ee0b.js.map"
+    "main.51d30cc5.css.map": "/UI-UX-Portfolio/static/css/main.51d30cc5.css.map",
+    "main.8a86ac8e.js.map": "/UI-UX-Portfolio/static/js/main.8a86ac8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e9951af.css",
-    "static/js/main.6628ee0b.js"
+    "static/css/main.51d30cc5.css",
+    "static/js/main.8a86ac8e.js"
   ]
 }
