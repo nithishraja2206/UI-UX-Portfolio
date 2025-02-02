@@ -97,6 +97,19 @@ export const ProjectDetails = [
       "Spearheaded the project from planning to deployment, ensuring seamless execution of the $1M e-commerce initiative.",
     skills: ["UI/UX Design", "Product Design"],
   },
+
+  {
+    id: 2,
+    image: Work2,
+    title: "MTU",
+    description:
+      "A $1M e-commerce platform for managing and selling merchandise of popular Indian actors and influencers.",
+    website: "madrasda.com",
+    figma: "madrasda/figma.com",
+    myRole:
+      "Spearheaded the project from planning to deployment, ensuring seamless execution of the $1M e-commerce initiative.",
+    skills: ["UI/UX Design", "Product Design"],
+  },
 ];
 
 export default Menu;
