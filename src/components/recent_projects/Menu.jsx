@@ -93,9 +93,14 @@ export const ProjectDetails = [
       "A $1M e-commerce platform for managing and selling merchandise of popular Indian actors and influencers.",
     website: "madrasda.com",
     figma: "madrasda/figma.com",
-    myRole:
+    myRole: [
       "Spearheaded the project from planning to deployment, ensuring seamless execution of the $1M e-commerce initiative.",
-    skills: ["UI/UX Design", "Product Design"],
+      "Led the design and development of UI/UX workflows using Figma and Adobe XD, crafting a brand-aligned and intuitive user experience.",
+      "Delivered responsive layouts and interactive prototypes with 100% cross-device compatibility.",
+      "Collaborated with developers to integrate scalable design elements, achieving flawless technical alignment.",
+      "Conducted usability testing with 100 participants, reducing task completion times by 30% and achieving 95% user satisfaction.",
+    ],
+    skills: ["UI/UX Design", "Product Design", "Project Management"],
   },
 
   {
@@ -106,8 +111,9 @@ export const ProjectDetails = [
       "A $1M e-commerce platform for managing and selling merchandise of popular Indian actors and influencers.",
     website: "madrasda.com",
     figma: "madrasda/figma.com",
-    myRole:
+    myRole: [
       "Spearheaded the project from planning to deployment, ensuring seamless execution of the $1M e-commerce initiative.",
+    ],
     skills: ["UI/UX Design", "Product Design"],
   },
 ];

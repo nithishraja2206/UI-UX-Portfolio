@@ -7,8 +7,25 @@
   height: 80vh;
   overflow-y: scroll;
   background-color: white;
-  padding: 16px;
+  /* padding: 16px; */
   border-radius: 8px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.project-icon {
+  color: #202020;
+  margin-right: 0.3rem;
+  margin-top: 0.2rem !important;
+}
+.icon-img-margin {
+  vertical-align: unset !important;
+}
+
+[data-theme="dark"] .project-icon {
+  color: #656565;
 }
 
 .project-modal-box::-webkit-scrollbar {
@@ -19,6 +36,27 @@
   background-color: #202020 !important;
 }
 
+.projects-sticky-container {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.projects-close-icon {
+  margin-left: auto;
+  cursor: pointer;
+  color: #fff;
+  color: #202020;
+}
+
+[data-theme="dark"] .projects-close-icon {
+  color: #fff;
+}
+
 .titleImg {
   height: 100%;
   width: 100%;
@@ -26,17 +64,80 @@
 }
 
 .project-modal-titleImg-container {
-  max-height: 200px;
+  max-height: 130px;
   overflow: hidden;
 }
 
-.tab__panel-title {
-  font-size: var(--h3-font-size);
+.project-content-container {
+  padding: 2rem 5rem;
+}
+
+.project-details-grid {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.project-details-text-title {
+  gap: 0.5rem;
+  color: var(--title-color);
+}
+[data-theme="dark"] .project-details-text-title {
+  color: #656565;
+}
+
+.project-details-text {
+  word-break: break-word;
+  color: var(--title-color);
+  font-weight: 300;
+}
+[data-theme="dark"] .project-details-text {
+  color: #fff;
+}
+
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.bullet-list li {
+  margin-bottom: 0.3rem;
+}
+.project-tab__panel-title {
+  font-size: 30px;
   margin-bottom: 1rem;
   color: var(--title-color);
 }
 
-[data-theme="dark"] .tab__panel-title {
+.skills-items {
+  display: flex;
+  align-items: center;
+}
+
+.skills-items-0 {
+  background-color: #6f6ffd;
+  padding: 0.1rem 0.2rem;
+  margin-right: 0.7rem;
+  font-size: 14px;
+}
+
+.skills-items-1 {
+  background-color: #f9d74c;
+  padding: 0.1rem 0.2rem;
+  margin-right: 0.7rem;
+  font-size: 14px;
+}
+
+.skills-items-2 {
+  background-color: #f97b8b;
+  padding: 0.1rem 0.2rem;
+  margin-right: 0.7rem;
+  font-size: 14px;
+}
+
+[data-theme="dark"] .project-tab__panel-title {
   color: #fff;
 }
 
