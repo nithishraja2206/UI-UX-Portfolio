@@ -84,4 +84,19 @@ const Menu = [
   },
 ];
 
+export const ProjectDetails = [
+  {
+    id: 1,
+    image: Work1,
+    title: "Madrasda - Merchandise Website",
+    description:
+      "A $1M e-commerce platform for managing and selling merchandise of popular Indian actors and influencers.",
+    website: "madrasda.com",
+    figma: "madrasda/figma.com",
+    myRole:
+      "Spearheaded the project from planning to deployment, ensuring seamless execution of the $1M e-commerce initiative.",
+    skills: ["UI/UX Design", "Product Design"],
+  },
+];
+
 export default Menu;

@@ -1,0 +1,49 @@
+.project-modal-box {
+  position: absolute;
+  top: 48%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 65vw;
+  height: 80vh;
+  overflow-y: scroll;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.project-modal-box::-webkit-scrollbar {
+  width: 0;
+}
+
+[data-theme="dark"] .project-modal-box {
+  background-color: #202020 !important;
+}
+
+.titleImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-modal-titleImg-container {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.tab__panel-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .tab__panel-title {
+  color: #fff;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .project-modal-box {
+    width: 90%; /* Make it take almost full width */
+    padding: 12px;
+  }
+}

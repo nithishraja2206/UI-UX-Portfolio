@@ -31,7 +31,7 @@ function App() {
         <About />
         <Services />
         <Resume />
-        <Portfolio />
+        <Portfolio theme={theme} />
         <Blog />
         <Testimonials />
         <Contact theme={theme} />
