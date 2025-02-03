@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UI-UX-Portfolio/static/css/main.51d30cc5.css",
-    "main.js": "/UI-UX-Portfolio/static/js/main.8a86ac8e.js",
+    "main.js": "/UI-UX-Portfolio/static/js/main.ea9cf16a.js",
     "static/media/sairam_incubation.png": "/UI-UX-Portfolio/static/media/sairam_incubation.40cf32329ae3f6a866bf.png",
     "static/media/Madrasda_Design.png": "/UI-UX-Portfolio/static/media/Madrasda_Design.6b516381ccf242a22103.png",
     "static/media/MichiganTech.png": "/UI-UX-Portfolio/static/media/MichiganTech.9047825ae37a0145f1e7.png",
@@ -33,10 +33,10 @@
     "static/media/dots-bg.svg": "/UI-UX-Portfolio/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
     "index.html": "/UI-UX-Portfolio/index.html",
     "main.51d30cc5.css.map": "/UI-UX-Portfolio/static/css/main.51d30cc5.css.map",
-    "main.8a86ac8e.js.map": "/UI-UX-Portfolio/static/js/main.8a86ac8e.js.map"
+    "main.ea9cf16a.js.map": "/UI-UX-Portfolio/static/js/main.ea9cf16a.js.map"
   },
   "entrypoints": [
     "static/css/main.51d30cc5.css",
-    "static/js/main.8a86ac8e.js"
+    "static/js/main.ea9cf16a.js"
   ]
 }
