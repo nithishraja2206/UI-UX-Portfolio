@@ -18,29 +18,27 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              A passionate Digital Designer with over 5 years of experience
-              crafting user-centric, intuitive, and visually engaging digital solutions
-              across web, mobile, and other platforms. Proficient in
-              creating scalable design systems, interactive prototypes, and
-              accessible solutions that balance aesthetics with functionality.
+              A <strong>Digital Experience Designer</strong> with 5+ years of expertise crafting <strong>intuitive, scalable, and visually engaging digital solutions</strong> 
+              across web, mobile, and interactive platforms. I specialize in <strong>interaction design, prototyping, and usability research</strong>, 
+              ensuring every product is seamless, accessible, and deeply engaging. My approach integrates <strong>human-centered design principles</strong> with behavioral 
+              insights, allowing me to create experiences that are both visually compelling and highly functional.
               <br></br>
               <br></br>
-              Currently focused on delivering seamless digital experiences by
-              collaborating with cross-functional teams, aligning designs with
-              business goals, and enhancing usability through data-driven
-              insights and experience design methodologies. Expertise includes wireframing, prototyping, usability testing, and designing user journeys to create intuitive workflows that deliver exceptional and engaging user experiences.
+              With a strong foundation in <strong>data-informed design</strong>, I optimize user experiences through <strong>A/B testing, behavioral analytics, and personalization</strong>. 
+              I thrive in <strong>cross-functional collaboration</strong>, aligning business goals with user needs while leveraging <strong>design systems, motion design, 
+              and visual storytelling</strong> to craft impactful digital experiences.
               <br />
               <br />
-              Here are a few tools, methodologies, and technologies I’ve been
-              working with recently:
+              Here are a few tools, methodologies, and technologies I’ve been working with recently: 
             </p>
 
             <ul className="about__list">
-              <li><b>Design Tools: </b>Figma, Adobe XD, Sketch, Axure RP, InVision</li>
-              <li><b>Graphic Design Software: </b>Adobe Photoshop, Illustrator</li>
-              <li><b>Web Technologies: </b>HTML, CSS, JavaScript (ES6+)</li>
-              <li><b>Research Methods: </b>Usability Testing, Behavioral Analysis</li>
-              <li><b>Data & Analytics: </b>Tableau, Python</li>
+              <li><b>Design & Prototyping: </b> Figma, Adobe XD, Sketch, InVision, Principle</li>
+              <li><b>Visual & Motion Design </b>Illustrator, Photoshop, After Effects, Lottie, Framer Motion</li>
+              <li><b>Web Technologies: </b>HTML, CSS, JavaScript (ES6+), ReactJS</li>
+              <li><b>Research Methods: </b>A/B Testing, Heuristic Evaluations, Heatmaps, Usability Testing, Behavioral Analysis, CRO</li>
+              <li><b>Data & Analytics: </b>Tableau, Python, Google Analytics, Hotjar, Data Visualization</li>
+              <li><b>Collaboration & Workflow: </b>Agile, JIRA, Miro, FigJam, Confluence</li>
             </ul>
             <button className="btn" onClick={downloadResume}>
               Donwload Resume
