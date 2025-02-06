@@ -13,6 +13,10 @@ module.exports = {
       screens: {
         "3xl": "1600px",
       },
+      fontFamily: {
+        // sans: ["Instrument Sans", "sans-serif"], // Set Instrument Sans as default
+        instrument: ["Instrument Sans", "sans-serif"], // Add Instrument Sans as a utility class
+      },
     },
   },
   plugins: [require("tailwind-scrollbar"), require("@tailwindcss/line-clamp")],
