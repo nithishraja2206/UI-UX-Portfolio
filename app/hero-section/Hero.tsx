@@ -110,16 +110,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-            Frontend Engineer and Web Designer, prev at{" "}
-            <Link
-              href="https://www.korahq.com/"
-              target="_blank"
-              className="underline underline-offset-2 hover:no-underline"
-              aria-label="Kora Website"
-            >
-              Kora,
-            </Link>{" "}
-            currently available for work.
+          Digital Experience Designer<br/>
+          <span className="block">Pixels, Passion & Precision—Since 2019</span>
           </p>
         </motion.div>
 
@@ -128,8 +120,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Focused on interfaces and experiences, working remotely from Lagos,
-            Nigeria.
+            Crafting intuitive, innovative, and impactful digital experiences across interfaces, products, and beyond.
           </p>
         </motion.div>
       </div>
