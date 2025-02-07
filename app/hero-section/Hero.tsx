@@ -38,19 +38,7 @@ const Hero = () => {
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
           <Link
-            href="https://github.com/victorcodess"
-            target="_blank"
-            aria-label="View GitHub Profile"
-          >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              Github
-            </motion.p>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+            href="https://www.linkedin.com/in/klnithishraja/"
             target="_blank"
             aria-label="View LinkedIn Profile"
           >
@@ -62,15 +50,27 @@ const Hero = () => {
             </motion.p>
           </Link>
           <Link
-            href="https://twitter.com/victorwill__"
+            href="mailto:klnithishraja@gmail.com"
             target="_blank"
-            aria-label="View Twitter Profile"
+            aria-label="View Mail Id"
           >
             <motion.p
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
               Gmail
+            </motion.p>
+          </Link>
+          <Link
+            href="https://github.com/nithishraja2206"
+            target="_blank"
+            aria-label="View Github Profile"
+          >
+            <motion.p
+              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              variants={bodyAnimation}
+            >
+              Resume
             </motion.p>
           </Link>
         </div>
@@ -110,8 +110,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-          Digital Experience Designer<br/>
-          <span className="block">Pixels, Passion & Precision—Since 2019</span>
+          <span className="text-[18px] md:text-[24px] font-bold">Digital Experience Designer</span><br/>
           </p>
         </motion.div>
 
@@ -120,7 +119,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Crafting intuitive, innovative, and impactful digital experiences across interfaces, products, and beyond.
+            Pixels, Passion & Precision—Since 2019
           </p>
         </motion.div>
       </div>

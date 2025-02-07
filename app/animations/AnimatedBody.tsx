@@ -65,7 +65,12 @@ export default function AnimatedBody({
       animate={ctrls}
       variants={bodyAnimation}
     >
-      {text}
+      {text.split("\n").map((line, index) => (
+      <span key={index}>
+        {line}
+        {index !== text.split("\n").length - 1 && <br />}
+      </span>
+    ))}
     </motion.p>
   );
 }

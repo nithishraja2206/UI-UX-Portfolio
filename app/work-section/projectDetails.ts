@@ -12,13 +12,13 @@ export type ProjectProps = {
 export const devProjects = [
   {
     id: 0,
-    name: "Odunsi",
+    name: "EventDesk",
     description:
-      "Portfolio website for Michael Odunsi, an experienced UI/UX designer crafting unique, user-friendly products and web experiences for Web3 founders and projects.",
+      "A full-featured event management SaaS platform that streamlines event planning and execution. It enables seamless role-based collaboration among event organizers, hosts, vendors, and attendees, ensuring efficient coordination and exceptional event experiences.",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/victorcodess/odunsi-web3-folio",
     demo: "https://www.odunsi.xyz/",
-    image: require(".//../../public/projects/odunsi.png"),
+    image: require(".//../../public/projects/Eventdesk.png"),
     available: true,
   },
   {
