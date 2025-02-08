@@ -19,7 +19,7 @@ const Reviews = () => {
           style={`font-instrument flex max-w-[500px] flex-col items-start text-left pr-5  font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,14vw,155.04px)]`}
         />
         <AnimatedBody
-          text="Real Stories from Clients and Collaborators Who Have Experienced My Work Firsthand"
+          text="Real Stories from People Who Have Experienced My Work Firsthand"
           className="w-[90%] text-center text-[14px] font-semibold uppercase sm:w-[500px] md:w-[550px] md:text-[16px]"
         />
       </div>

@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
-import alex from "../../public/samuel.avif";
-import jerry from "../../public/jerry.avif";
-import mauro from "../../public/mauro.jpeg";
+import vignesh from "../../public/vignesh.jpg";
+import steve from "../../public/steve.jpg";
+import aritra from "../../public/aritra.jpg";
 import alan from "../../public/alan.jpeg";
 import olamide from "../../public/olamide.jpeg";
 import umar from "../../public/umar.jpeg";
@@ -17,26 +17,26 @@ export type reviewProps = {
 
 export const reviewDetails = [
   {
-    name: "Samuel Alex",
-    role: "Product Designer",
-    company: "Umoja Linn",
-    profileImg: alex,
+    name: "Raja Ramachandran",
+    role: "Founder & CEO",
+    company: "HeroCore",
+    profileImg: vignesh,
     testimonial:
       "Victor is seriously one of the best frontend developers I've ever worked with. He's incredibly talented, super easy to work with, and always goes above and beyond.",
   },
   {
-    name: "Jeremiah Oloyede",
-    role: "Founder",
-    company: "Crown Branding Agency",
-    profileImg: jerry,
+    name: "Steve Mintz",
+    role: "Communications Director",
+    company: "Michigan Tech",
+    profileImg: steve,
     testimonial:
       "Victor's work is truly outstanding, and I can't recommend him enough! He completely transformed our branding agency's website. Since launch, we've seen a significant jump in website traffic and, crucially, conversions.",
   },
   {
-    name: "Mauro Reis",
-    role: "CEO",
-    company: "Meuclone Digital",
-    profileImg: mauro,
+    name: "Aritra Chakrabarty",
+    role: "President",
+    company: "ISA, Michigan Tech",
+    profileImg: aritra,
     testimonial:
       "Outstanding professional, developed our startup's website and delivered it in a very short time and with high quality.",
   },

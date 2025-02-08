@@ -56,13 +56,13 @@ export const devProjects = [
   },
   {
     id: 4,
-    name: "Flixify",
+    name: "Photoier",
     description:
-      "Flixify lets you seamlessly explore movies and TV series, add bookmarks, and search across all pages. It offers user authentication along with a theme switch.",
+      "Designed an AI-driven facial recognition app that automates photo organization and sharing, making it effortless to tag, manage, and share memories seamlessly.",
     technologies: ["Next.js", "Typescript", "Prisma"],
     github: "https://github.com/victorcodess/flixify",
     demo: "https://flixify.victorwilliams.me/",
-    image: require(".//../../public/projects/flixify.png"),
+    image: require(".//../../public/projects/Photoier.png"),
     available: true,
   },
   // {
