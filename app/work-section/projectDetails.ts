@@ -23,7 +23,7 @@ export const devProjects = [
   },
   {
     id: 1,
-    name: "Michigan Tech Website",
+    name: "Michigan Tech",
     description:
       "Redesigned university websites and departmental microsites to enhance search visibility, improve usability, and boost user engagement.",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],

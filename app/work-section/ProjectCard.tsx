@@ -36,14 +36,16 @@ const ProjectCard = ({
       <Image
         src={image}
         alt={name}
-        className={`absolute -bottom-2 h-[40%] w-[100%] sm:w-[85%] md:h-auto md:w-[60%] lg:h-[70%] lg:max-w-[50%] xl:h-auto ${
-          id % 2 === 0 ? "right-5 md:right-0" : " left-5 md:left-0"
+        className={`absolute -bottom-2 h-[40%] w-[100%] sm:w-[85%] md:h-auto md:w-[74%] lg:h-[70%] lg:max-w-[50%] xl:h-auto ${
+          id % 2 === 0
+            ? "right-5 md:right-[19%] lg:right-0"
+            : "left-5 md:left-[17%] lg:left-0"
         }`}
       />
       <div
         className={`absolute top-0 text-[#0E1016] ${
           id % 2 === 0
-            ? "right-0 mr-8 md:right-auto md:left-0 md:mr-0 md:ml-8 lg:ml-14"
+            ? "lg::mr-0 right-0 mr-8 lg:right-auto lg:left-0 lg:ml-14"
             : "right-0 mr-8 lg:mr-14"
         } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
       >
@@ -78,7 +80,7 @@ const ProjectCard = ({
             </Link>
           </>
         ) : (
-          <div className=" flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4">
             <Link
               href={github}
               target="_blank"
@@ -111,14 +113,14 @@ const ProjectCard = ({
         // } mb-10  md:mb-16 lg:mb-14`}
         className={`absolute text-white  ${
           !(id % 2 === 0)
-            ? "top-32 mx-5 text-center md:right-0 md:mr-0 md:ml-0 md:text-left lg:right-0 lg:top-36 lg:mr-8"
-            : "top-32 mx-5 text-center md:left-10 md:mr-12 md:text-left lg:top-36 lg:ml-4"
-        }  mb-10 md:mb-16  lg:mb-14 lg:max-w-[46%]`}
+            ? "top-32 mx-5 text-center md:ml-8 lg:right-0 lg:top-36 lg:ml-0 lg:mr-8 lg:text-left"
+            : "top-32 mx-5 text-center md:ml-8 lg:left-10 lg:top-36 lg:mr-12 lg:ml-4 lg:text-left"
+        }  mb-10 md:mb-16  md:w-[90%] lg:mb-14 lg:max-w-[46%]`}
       >
         <AnimatedTitle
           text={name}
           className={
-            "text-[40px] leading-none text-white md:max-w-[90%] md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
+            "text-[40px] leading-none text-white md:max-w-[100%] md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
           }
           wordSpace={"mr-[0.25em]"}
           charSpace={"-mr-[0.01em]"}
@@ -126,10 +128,10 @@ const ProjectCard = ({
         <AnimatedBody
           text={description}
           className={
-            "mt-4 w-[100%] max-w-[457px] text-[16px] font-semibold text-[#95979D]"
+            "mt-4 w-[100%] text-[16px] font-semibold text-[#95979D] md:w-[100%] lg:max-w-[457px]"
           }
         />
-        <div className="mt-24 hidden flex-col md:flex md:flex-row md:gap-4 ">
+        <div className="hidden flex-col md:mt-5 md:flex md:flex-row md:items-center md:justify-center md:gap-4 md:text-center lg:mt-24 lg:items-start lg:justify-start lg:text-left">
           {technologies.map((tech, id) => (
             <AnimatedTitle
               text={tech}
