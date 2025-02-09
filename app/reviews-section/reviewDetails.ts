@@ -30,7 +30,7 @@ export const reviewDetails = [
     company: "Michigan Tech",
     profileImg: steve,
     testimonial:
-      "Victor's work is truly outstanding, and I can't recommend him enough! He completely transformed our branding agency's website. Since launch, we've seen a significant jump in website traffic and, crucially, conversions.",
+      "There was never a project that Nithish was unwilling to take on. His contributions were instrumental in improving both the design and functionality of the site, providing users with the information they needed to learn more about our programs. He spearheaded several page redesigns and implemented impactful updates that enhanced user experience and accessibility across the platform.",
   },
   {
     name: "Aritra Chakrabarty",

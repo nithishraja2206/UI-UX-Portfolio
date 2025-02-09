@@ -17,7 +17,7 @@ const Hero = () => {
     >
       <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></motion.div>
 
-      <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
+      <div className="absolute top-10 flex w-[90%] justify-between  sm:w-[90%] md:w-[80%] lg:max-w-[1440px]">
         <div>
           <motion.div
             className=" border-none px-2 pt-0 pb-2 text-[14px] font-semibold sm:block md:text-[16px] lg:block"
@@ -61,18 +61,6 @@ const Hero = () => {
               Gmail
             </motion.p>
           </Link>
-          <Link
-            href="https://github.com/nithishraja2206"
-            target="_blank"
-            aria-label="View Github Profile"
-          >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              GitHub
-            </motion.p>
-          </Link>
         </div>
       </div>
 
@@ -110,7 +98,10 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-          <span className="text-[18px] md:text-[24px] font-bold">Digital Experience Designer</span><br/>
+            <span className="text-[18px] font-bold md:text-[24px]">
+              Digital Experience Designer
+            </span>
+            <br />
           </p>
         </motion.div>
 
