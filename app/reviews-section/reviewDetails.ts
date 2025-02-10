@@ -19,10 +19,10 @@ export const reviewDetails = [
   {
     name: "Raja Ramachandran",
     role: "Founder & CEO",
-    company: "HeroCore",
+    company: "HeroCore LLC",
     profileImg: vignesh,
     testimonial:
-      "Victor is seriously one of the best frontend developers I've ever worked with. He's incredibly talented, super easy to work with, and always goes above and beyond.",
+      "Nithish has been the driving force behind our UX strategy, crafting scalable design systems and seamless interaction models that elevate our SaaS products. His expertise in user research, prototyping, and cross-functional collaboration has streamlined workflows and improved product efficiency. His work continues to set the bar for design excellence at HeroCore.",
   },
   {
     name: "Steve Mintz",
@@ -30,7 +30,7 @@ export const reviewDetails = [
     company: "Michigan Tech",
     profileImg: steve,
     testimonial:
-      "There was never a project that Nithish was unwilling to take on. His contributions were instrumental in improving both the design and functionality of the site, providing users with the information they needed to learn more about our programs. He spearheaded several page redesigns and implemented impactful updates that enhanced user experience and accessibility across the platform.",
+      " There was never a project that Nithish was unwilling to take on. His contributions greatly enhanced the site’s design, functionality, and accessibility, making information more intuitive for users. He spearheaded key redesigns and implemented impactful updates that elevated the overall user experience—his work speaks for itself.",
   },
   {
     name: "Aritra Chakrabarty",
@@ -38,7 +38,7 @@ export const reviewDetails = [
     company: "ISA, Michigan Tech",
     profileImg: aritra,
     testimonial:
-      "Outstanding professional, developed our startup's website and delivered it in a very short time and with high quality.",
+      "Nithish revamped how ISA connects with its community online, designing a website that is both inviting and easy to navigate. His keen eye for detail and thoughtful approach made the experience seamless, ensuring members could engage effortlessly. His work has left a lasting impact, shaping how ISA interacts with its members.",
   },
   // {
   //   name: "Umar Abdullahi",

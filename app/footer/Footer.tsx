@@ -15,16 +15,16 @@ const Footer = () => {
         <AnimatedBody text={`Copyright ${year}`} className={"m-0 p-0"} />
         <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
           <AnimatedBody
-            text={"Design & Development by"}
+            text={"Design by"}
             className={"m-0 p-0"}
           />
           <Link
-            href="https://github.com/victorcodess"
+            href="https://www.linkedin.com/in/klnithishraja/"
             target="_blank"
-            aria-label="Victor's GitHub Profile"
+            aria-label="Nithish's GitHub Profile"
           >
             <span className="underline underline-offset-2 hover:no-underline">
-              <AnimatedBody text={"Victor Williams"} className={"m-0 p-0"} />
+              <AnimatedBody text={"Nithish Raja"} className={"m-0 p-0"} />
             </span>{" "}
           </Link>
         </div>

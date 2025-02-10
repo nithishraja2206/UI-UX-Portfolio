@@ -72,7 +72,7 @@ const Contact = () => {
           <div className="grid gap-4 sm:grid-cols-2">
             <input
               type="text"
-              placeholder="Insert your name"
+              placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full rounded-xl bg-[#212531] p-3 focus:ring-2 focus:ring-blue-400"
@@ -80,7 +80,7 @@ const Contact = () => {
             />
             <input
               type="email"
-              placeholder="Insert your email"
+              placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full rounded-xl bg-[#212531] p-3 focus:ring-2 focus:ring-blue-400"
@@ -90,7 +90,7 @@ const Contact = () => {
 
           <input
             type="text"
-            placeholder="Insert your subject"
+            placeholder="Subject"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             className="w-full rounded-xl bg-[#212531] p-3 focus:ring-2 focus:ring-blue-400"
@@ -98,7 +98,7 @@ const Contact = () => {
           />
 
           <textarea
-            placeholder="Write your message"
+            placeholder="Type your message..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="h-40 w-full resize-none rounded-xl bg-[#212531] p-3 focus:ring-2 focus:ring-blue-400"

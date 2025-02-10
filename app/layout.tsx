@@ -13,27 +13,21 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "nithish.design",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    "Digital Experience Designer",
   generator: "Next.js",
   applicationName: "Nithish.design",
   keywords: [
-    "freelance",
-    "developer",
-    "freelance developer",
+    "UI/UX",
+    "Graphic designing",
+    "product designer",
     "frontend",
-    "react",
-    "frontend developer",
+    "Visual Designer",
+    "UX Designer",
     "frontend engineer",
     "creative",
     "creative developer",
     "creative engineer",
     "tech",
-    "nigeria",
-    "software",
-    "software developer",
-    "portfolio",
-    "frontend developer portfolio",
-    "creative developer portfolio",
   ],
   colorScheme: "dark",
   openGraph: {
@@ -44,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "nithish.design",
     images: [
       {
-        url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+        url: "",
         width: 1200,
         height: 630,
-        alt: "Victor Williams — Frontend Engineer",
+        alt: "Nithish Raja",
       },
     ],
     locale: "en-US",
@@ -55,13 +49,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Victor Williams — Frontend Engineer",
+    title: "Nithish Raja",
     description:
       "Pixels, Passion & Precision—Since 2018. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
-    creator: "victorwill__",
-    creatorId: "1243720976552144897",
+    creator: "",
+    creatorId: "",
     images: [
-      "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+      "",
     ],
   },
   robots: {
