@@ -26,23 +26,28 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
-      - name: Configure GitHub Pages
+      - name: Prepare standalone output
         run: |
-          mkdir -p ./out
-          touch ./out/.nojekyll
-
-      - name: Update browserslist database
-        run: npx browserslist@latest --update-db
+          mkdir -p standalone-output
+          cp -r .next/standalone standalone-output
+          cp -r public standalone-output/public
+          cp -r .next/static standalone-output/.next/static
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4 # Updated to v4
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ./out
+          path: standalone-output
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: standalone-output
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
