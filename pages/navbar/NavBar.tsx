@@ -4,7 +4,8 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
-  const resumeUrl = "/Resume/Resume.pdf";
+  const resumeUrl =
+    "https://nithishraja2206.github.io/UI-UX-Portfolio/Resume/Resume.pdf";
   const downloadResume = async () => {
     window.open(resumeUrl, "_blank");
   };
