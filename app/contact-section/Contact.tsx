@@ -59,10 +59,10 @@ const Contact = () => {
           </h2>
           <div className="text-center md:text-left">
             <h3 className="mb-2 text-xl font-semibold">
-              Let's talk about everything!
+              Let&apos;s talk about everything!
             </h3>
             <p className="text-gray-500">
-              Don't like forms? Send me an email. 👋
+              Don&apos;t like forms? Send me an email. 👋
             </p>
           </div>
         </div>
