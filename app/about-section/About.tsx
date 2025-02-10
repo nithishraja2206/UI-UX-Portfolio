@@ -75,19 +75,17 @@ const About = () => {
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
               />
-              <AnimatedBody
-                text={
-                  "HTML, CSS, JavaScript (ES6+), ReactJS."
-                }
-              />
+              <AnimatedBody text={"HTML, CSS, JavaScript (ES6+), ReactJS."} />
             </div>
           </div>
         </div>
         <div className="mt-10 flex flex-col md:-mt-0 lg:mt-28">
           <SongCarousel />
           <AnimatedBody
-            text={"The roots of my craft,\nshaping every seamless experience I design :)"}
-            className="absolute bottom-10 right-0 left-0 mx-auto w-[90%] text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[500px] md:bottom-12 md:w-[550px] md:text-[16px] "
+            text={
+              "The roots of my craft,\nshaping every seamless experience I design :)"
+            }
+            className="absolute bottom-2 right-0 left-0 mx-auto w-[90%] text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[500px] md:bottom-12 md:w-[550px] md:text-[16px] "
           />
         </div>
       </div>

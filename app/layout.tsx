@@ -12,8 +12,7 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: "nithish.design",
-  description:
-    "Digital Experience Designer",
+  description: "Digital Experience Designer",
   generator: "Next.js",
   applicationName: "Nithish.design",
   keywords: [
@@ -54,9 +53,7 @@ export const metadata: Metadata = {
       "Pixels, Passion & Precision—Since 2018. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
     creator: "",
     creatorId: "",
-    images: [
-      "",
-    ],
+    images: [""],
   },
   robots: {
     index: true,
@@ -87,6 +84,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body
         className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
