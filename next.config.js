@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   basePath: "/UI-UX-Portfolio", // Set basePath to match repo name
   assetPrefix: "/UI-UX-Portfolio", // Ensures assets load correctly

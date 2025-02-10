@@ -1,8 +1,8 @@
-import ReviewCard from "./ReviewCard";
-import { reviewDetails } from "./reviewDetails";
-import AnimatedWords2 from "../animations/AnimatedWords2";
-import { monaSans } from "../fonts/monaSans";
-import AnimatedBody from "../animations/AnimatedBody";
+import ReviewCard from "../../src/components/ReviewCard";
+import { reviewDetails } from "../../src/utils/reviewDetails";
+import AnimatedWords2 from "../../src/components/AnimatedWords2";
+import { monaSans } from "../../src/utils/fonts/monaSans";
+import AnimatedBody from "../../src/components/AnimatedBody";
 import { motion } from "framer-motion";
 import hireMe from "../../public/hiremeoncontra-dark.webp";
 import Image from "next/image";

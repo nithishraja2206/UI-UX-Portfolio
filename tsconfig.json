@@ -25,7 +25,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/work-section/projectDetails.ts",
-    "pages/animations/PreLoader/loader.js"
+    "src/utils/loader.js",
+    "src"
   ],
   "exclude": ["node_modules"]
 }

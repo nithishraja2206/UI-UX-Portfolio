@@ -1,4 +1,4 @@
-import { reviewProps } from "./reviewDetails";
+import { reviewProps } from "../utils/reviewDetails";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import slash from "../../public/review-slash.svg";

@@ -1,8 +1,8 @@
 import BlogCard from "./BlogCard";
-import { blogDetails } from "./blogDetails";
-import AnimatedWords2 from "../animations/AnimatedWords2";
-import { monaSans } from "../fonts/monaSans";
-import AnimatedBody from "../animations/AnimatedBody";
+import { blogDetails } from "../../src/utils/blogDetails";
+import AnimatedWords2 from "../../src/components/AnimatedWords2";
+import { monaSans } from "../../src/utils/fonts/monaSans";
+import AnimatedBody from "../../src/components/AnimatedBody";
 
 const Blog = () => {
   return (

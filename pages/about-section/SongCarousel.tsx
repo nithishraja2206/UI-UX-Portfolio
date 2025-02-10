@@ -1,5 +1,5 @@
-import SongCard from "./SongCard";
-import { songs, SongProps } from "./songDetails";
+import SongCard from "../../src/components/SongCard";
+import { songs, SongProps } from "../../src/utils/songDetails";
 
 const SongCarousel = () => {
   return (

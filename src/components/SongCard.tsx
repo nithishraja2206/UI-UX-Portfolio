@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SongProps } from "./songDetails";
+import { SongProps } from "../utils/songDetails";
 import Link from "next/link";
 
 const SongCard = ({ title, artist, image, link }: SongProps) => {

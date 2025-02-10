@@ -1,5 +1,9 @@
-import ProjectCard from "./ProjectCard";
-import { devProjects, designProjects, ProjectProps } from "./projectDetails";
+import ProjectCard from "../../src/components/ProjectCard";
+import {
+  devProjects,
+  designProjects,
+  ProjectProps,
+} from "../../src/utils/projectDetails";
 import { useState } from "react";
 
 const ProjectGrid = () => {
@@ -27,21 +31,21 @@ const ProjectGrid = () => {
       </div> */}
 
       {/* {filter ? ( */}
-        <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
-          {devProjects.map((project: ProjectProps) => (
-            <ProjectCard
-              id={project.id}
-              key={project.id}
-              name={project.name}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              demo={project.demo}
-              image={project.image}
-              available={project.available}
-            />
-          ))}
-        </div>
+      <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
+        {devProjects.map((project: ProjectProps) => (
+          <ProjectCard
+            id={project.id}
+            key={project.id}
+            name={project.name}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github}
+            demo={project.demo}
+            image={project.image}
+            available={project.available}
+          />
+        ))}
+      </div>
       {/* ) : (
         <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-6 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
           {designProjects.map((project: ProjectProps) => (

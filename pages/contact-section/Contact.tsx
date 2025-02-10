@@ -1,5 +1,4 @@
-"use client";
-import { monaSans } from "../fonts/monaSans";
+import { monaSans } from "../../src/utils/fonts/monaSans";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 

@@ -1,12 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { monaSans } from "../../pages/fonts/monaSans";
+import { monaSans } from "../../src/utils/fonts/monaSans";
 import { motion } from "framer-motion";
-import {
-  imageAnimation,
-  bodyAnimation,
-} from "../../pages/animations/animations";
-import AnimatedWords from "../../pages/animations/AnimatedWords";
+import { imageAnimation, bodyAnimation } from "../../src/utils/animations";
+import AnimatedWords from "../../src/components/AnimatedWords";
 import profile from "../../public/Profile-bw.png";
 import nlogo from "../../public/nlogo.png";
 

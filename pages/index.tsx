@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import useBlobity from "blobity/lib/react/useBlobity";
 
 import Hero from "./hero-section/Hero";
-import { initialBlobityOptions } from "./utils/BlobityConfig";
+import { initialBlobityOptions } from "../src/utils/BlobityConfig";
 import NavBar from "./navbar/NavBar";
 import PreLoader from "./animations/PreLoader/PreLoader";
 import Reviews from "./reviews-section/ReviewGrid";

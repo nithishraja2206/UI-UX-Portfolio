@@ -1,7 +1,7 @@
 import SongCarousel from "./SongCarousel";
 
-import AnimatedBody from "../animations/AnimatedBody";
-import AnimatedTitle from "../animations/AnimatedTitle";
+import AnimatedBody from "../../src/components/AnimatedBody";
+import AnimatedTitle from "../../src/components/AnimatedTitle";
 
 const About = () => {
   return (

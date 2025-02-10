@@ -28,6 +28,7 @@ jobs:
         run: |
           npm run build
           npm run export
+          touch out/.nojekyll # Prevent GitHub Pages from ignoring _next folder
 
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

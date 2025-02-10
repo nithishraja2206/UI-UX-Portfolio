@@ -1,4 +1,4 @@
-import { blogProps } from "./blogDetails";
+import { blogProps } from "../../src/utils/blogDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
