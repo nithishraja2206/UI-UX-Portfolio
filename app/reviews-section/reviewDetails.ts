@@ -22,7 +22,7 @@ export const reviewDetails = [
     company: "HeroCore LLC",
     profileImg: vignesh,
     testimonial:
-      "Nithish has been the driving force behind our UX strategy, crafting scalable design systems and seamless interaction models that elevate our SaaS products. His expertise in user research, prototyping, and cross-functional collaboration has streamlined workflows and improved product efficiency. His work continues to set the bar for design excellence at HeroCore.",
+      "Nithish has been at the heart of our product experience, shaping designs that feel effortless and intuitive. His leadership in streamlining workflows and enhancing collaboration has made a real impact, bringing clarity and efficiency to our SaaS products. His work continues to set the bar for design excellence at HeroCore.",
   },
   {
     name: "Steve Mintz",
