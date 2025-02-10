@@ -3,7 +3,7 @@ name: Deploy Next.js to GitHub Pages
 on:
   push:
     branches:
-      - Version-2 # Trigger deployment when pushing to Version-2
+      - Version-2 # Deploy only when changes are pushed to Version-2
 
 permissions:
   contents: read
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: Version-2 # Ensure it checks out the correct branch
 
@@ -35,8 +35,9 @@ jobs:
           touch ./out/.nojekyll
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4 # Updated to v4
         with:
+          name: github-pages
           path: ./out
 
   deploy:
