@@ -24,8 +24,8 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/work-section/projectDetails.ts",
-    "app/animations/PreLoader/loader.js"
+    "pages/work-section/projectDetails.ts",
+    "pages/animations/PreLoader/loader.js"
   ],
   "exclude": ["node_modules"]
 }

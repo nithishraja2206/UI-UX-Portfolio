@@ -48,7 +48,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="container mx-auto py-16 px-6 lg:px-32" id="contact">
+    <section
+      className="container mx-auto bg-[#0E1016] bg-cover bg-center  py-16 px-6 lg:px-32"
+      id="contact"
+    >
       <div className="grid gap-8 md:grid-cols-2">
         {/* Left Side */}
         <div>
@@ -58,7 +61,7 @@ const Contact = () => {
             Get In <br /> Touch
           </h2>
           <div className="text-center md:text-left">
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-xl font-semibold text-gray-500">
               Let&apos;s talk about everything!
             </h3>
             <p className="text-gray-500">
