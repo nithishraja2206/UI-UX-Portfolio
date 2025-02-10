@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <section
-      className="container mx-auto bg-[#0E1016] bg-cover bg-center  py-16 px-6 lg:px-32"
+      className="mx-auto w-full bg-[#0E1016] py-16 px-6 lg:px-32"
       id="contact"
     >
       <div className="grid gap-8 md:grid-cols-2">
