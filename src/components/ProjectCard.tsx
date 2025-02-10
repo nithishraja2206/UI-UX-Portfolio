@@ -59,7 +59,7 @@ const ProjectCard = ({
             >
               <FontAwesomeIcon
                 icon={faFigma}
-                className=" w-[20px] rounded-full bg-white p-2 text-[20px] md:w-[25px] md:text-[24px] lg:h-[25px] lg:w-[25px] lg:text-[28px]"
+                className=" h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"
@@ -70,7 +70,7 @@ const ProjectCard = ({
             <Link href={demo} target="_blank" aria-label="Open Live Demo">
               <FontAwesomeIcon
                 icon={faLink}
-                className=" w-[20px] rounded-full bg-white p-2 text-[20px] md:w-[25px] md:text-[24px] lg:h-[25px] lg:w-[25px]  lg:text-[28px]"
+                className="h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px]  lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"
@@ -89,7 +89,7 @@ const ProjectCard = ({
             >
               <FontAwesomeIcon
                 icon={faFigma}
-                className=" w-[15px] rounded-full bg-white p-2 text-[20px] md:w-[25px] md:text-[24px] lg:h-[25px] lg:w-[25px] lg:text-[28px]"
+                className=" h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"

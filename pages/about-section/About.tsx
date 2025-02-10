@@ -22,7 +22,7 @@ const About = () => {
         />
 
         <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
-          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[16px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[18px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[22px] ">
+          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[18px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[22px] ">
             <AnimatedBody
               text={
                 "With 5+ years of expertise, I specialize in creating intuitive, scalable, and visually engaging digital solutions across web, mobile, and interactive platforms. My focus on interaction design, prototyping, and usability research ensures seamless, accessible, and engaging products."
@@ -35,7 +35,7 @@ const About = () => {
             />
           </div>
 
-          <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
+          <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[18px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
             <div className="flex flex-col gap-4 md:gap-3">
               <AnimatedTitle
                 text={"Tools"}

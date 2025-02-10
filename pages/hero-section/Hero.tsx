@@ -27,7 +27,7 @@ const Hero = () => {
             <Image
               src={nlogo}
               priority
-              alt="Nithish's img"
+              alt="Logo"
               // data-blobity-tooltip="Giga Chad"
               // data-blobity-invert="false"
               // className=" w-[150px] rounded-[16px] md:w-[200px] md:rounded-[32px] lg:w-[245px]"
@@ -73,7 +73,7 @@ const Hero = () => {
             style="font-instrument inline-block overflow-hidden pt-1 -mr-4 sm:-mr-5 md:-mr-7 lg:-mr-9 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
           />
           <motion.div
-            className="absolute bottom-[-110px] mx-auto sm:bottom-[-100px] md:bottom-[-130px] lg:bottom-[-150px]"
+            className="absolute bottom-[-190px] mx-auto sm:bottom-[-100px] md:bottom-[-250px] lg:bottom-[-150px]"
             variants={imageAnimation}
           >
             <Image
