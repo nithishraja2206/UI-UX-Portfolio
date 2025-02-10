@@ -4,7 +4,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import "../../styles/global.css";
 
 const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
   return (
