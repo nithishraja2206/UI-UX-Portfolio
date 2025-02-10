@@ -1,11 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  trailingSlash: true,
   experimental: {
     appDir: true,
   },
   optimizeFonts: false,
   images: {
-    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
+    domains: [
+      "user-images.githubusercontent.com",
+      "cdn.hashnode.com",
+      "github.com",
+    ],
   },
   fontLoaders: [
     {
