@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         // sans: ["Instrument Sans", "sans-serif"], // Set Instrument Sans as default
         instrument: ["Instrument Sans", "sans-serif"], // Add Instrument Sans as a utility class
+        sans: ["Syne", "sans-serif"],
       },
     },
   },

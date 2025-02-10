@@ -1,17 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone", // Change from "export" to "standalone"
-  trailingSlash: true,
-  experimental: {
-    appDir: true, // Keep if using the App Router
-  },
+  output: "export", // Forces static export
   images: {
-    domains: [
-      "user-images.githubusercontent.com",
-      "cdn.hashnode.com",
-      "github.com",
-    ],
+    unoptimized: true, // GitHub Pages doesn't support Next.js Image Optimization
   },
+  trailingSlash: true, // Ensures correct linking in GitHub Pages
 };
 
 module.exports = nextConfig;

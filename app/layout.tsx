@@ -1,14 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
-
-const syne = Syne({
-  subsets: ["latin"],
-  display: "block",
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "nithish.design",
@@ -37,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "nithish.design",
     images: [
       {
-        url: "",
+        url: "", // Replace with a valid URL
         width: 1200,
         height: 630,
         alt: "Nithish Raja",
@@ -79,19 +71,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        {/* Google Fonts - Instrument Sans */}
+        {/* Google Fonts - Syne & Instrument Sans */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
 
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
-      <body
-        className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
-      >
+      <body className="scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]">
         {children}
-        <Analytics />
       </body>
     </html>
   );

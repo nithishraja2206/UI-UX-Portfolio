@@ -18,26 +18,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: Version-2 # Ensure it checks out the correct branch
+          ref: Version-2
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js app
-        run: npm run build
-
-      - name: Prepare standalone output
-        run: |
-          mkdir -p standalone-output
-          cp -r .next/standalone standalone-output
-          cp -r public standalone-output/public
-          cp -r .next/static standalone-output/.next/static
+      - name: Build and Export Next.js app
+        run: npm run build && npx next export
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: standalone-output
+          path: out # Next.js exports the site to the "out" folder
 
   deploy:
     needs: build
@@ -47,7 +40,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: standalone-output
+          path: out
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
