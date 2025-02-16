@@ -9,6 +9,7 @@ import PreLoader from "./animations/PreLoader/PreLoader";
 import Reviews from "./reviews-section/ReviewGrid";
 import Footer from "./footer/Footer";
 import Contact from "./contact-section/Contact";
+import Blog from "./blog-section/BlogGrid";
 
 const Work = dynamic(() => import("./work-section/Work"));
 const About = dynamic(() => import("./about-section/About"));
@@ -35,6 +36,7 @@ export default function Home() {
         <Hero />
         <About />
         <Work />
+        <Blog />
         <Reviews />
         <Contact />
         <Footer />

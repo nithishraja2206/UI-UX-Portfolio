@@ -1,6 +1,7 @@
 import { blogProps } from "../../src/utils/blogDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -22,10 +23,10 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
         amount: "some",
         once: true,
       }}
-      className="relative flex h-[430px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531]"
+      className="relative flex h-[430px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531] p-1"
     >
       <div className="mt-4 h-[100%] w-[90%] lg:mt-5 lg:w-[92%]">
-        <div className="h-[60%] w-full md:h-[56%]">
+        <div className="h-[60%] w-full md:h-[70%]">
           <Image
             src={image}
             alt={title}
@@ -35,16 +36,15 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
           />
         </div>
 
-        <h3 className="mt-3 break-all uppercase leading-[1em] tracking-tight line-clamp-2">
+        <h3 className="mt-3 text-center text-[18px] leading-[1em] tracking-tight text-[#fff] line-clamp-2">
           {title}
         </h3>
       </div>
 
-      <div className="absolute bottom-0 mb-5 flex w-[90%] items-center justify-between text-[14px] font-bold text-[#95979D]">
+      <div className="absolute bottom-4 flex w-[90%] items-center justify-between text-[14px] font-bold text-[#95979D]">
         {available ? (
           <>
-            {" "}
-            <p>{date}</p>{" "}
+            <p className="font-instrument">{date}</p>
             <Link
               href={url}
               target="_blank"
@@ -52,13 +52,13 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
               aria-label="Open Blog Post"
             >
               <FontAwesomeIcon
-                icon={faArrowRight}
-                className=" w-[16px] rounded-full bg-[#0E1016] p-3 text-[16px] text-[#fff] md:w-[20px] md:text-[20px] lg:w-[18px] lg:p-4 lg:text-[18px]"
+                icon={faLink}
+                className="h-[35px] w-[35px] rounded-full bg-[#0E1016] p-2 text-[22px] text-white md:h-[25px] md:w-[25px] md:text-[22px] lg:h-[35px] lg:w-[35px]  lg:text-[30px]"
                 data-blobity
                 data-blobity-radius="30"
                 data-blobity-offset-x="4"
                 data-blobity-offset-y="4"
-                data-blobity-magnetic="false"
+                data-blobity-magnetic="true"
               />
             </Link>
           </>
