@@ -1,6 +1,6 @@
-import Cert1 from "../../public/certifications/Cert-Foundation.jpeg";
-import Cert2 from "../../public/certifications/Cert-Start.jpeg";
-import Cert3 from "../../public/certifications/Cert-Wireframe.jpeg";
+import Cert1 from "../../public/certifications/Cert-Professional.jpeg";
+import Cert2 from "../../public/certifications/Cert-High.jpeg";
+import Cert3 from "../../public/certifications/Cert-Research.jpeg";
 
 export type blogProps = {
   title: string;
@@ -13,24 +13,24 @@ export type blogProps = {
 
 export const blogDetails = [
   {
-    title: "Foundations of User Experience (UX) Design",
+    title: "Google UX Design Professional",
     image: Cert1,
     date: "Google | 2025",
-    url: "https://www.coursera.org/account/accomplishments/verify/BX1W5C6WO731?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+    url: "https://coursera.org/share/d439a995291e261c5a586e3738b5addb",
     available: true,
   },
   {
-    title: "Start the UX Design Process: Empathize, Define, and Ideate",
+    title: "High-Fidelity Designs and Prototypes in Figma",
     image: Cert2,
     date: "Google | 2025",
-    url: "https://www.coursera.org/account/accomplishments/verify/2W9SU8EBWPNI?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+    url: "https://www.coursera.org/account/accomplishments/verify/ETE9RLJMODHP?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
     available: true,
   },
   {
-    title: "Build Wireframes and Low-Fidelity Prototypes",
+    title: "UX Research and Test Early Concepts",
     image: Cert3,
     date: "Google | 2025",
-    url: "https://www.coursera.org/account/accomplishments/verify/6U60JJDOIEDG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+    url: "https://www.coursera.org/account/accomplishments/verify/S4EHTJDUBWA3?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
     available: true,
   },
 ];
