@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
           <AnimatedBody text={"Design by"} className={"m-0 p-0"} />
           <Link
-            href="https://www.linkedin.com/in/klnithishraja/"
+            href="https://www.linkedin.com/in/nithish-loganathankl/"
             target="_blank"
             aria-label="Nithish's GitHub Profile"
           >
