@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
           <Link
-            href="https://www.linkedin.com/in/klnithishraja/"
+            href="https://www.linkedin.com/in/nithish-loganathankl/"
             target="_blank"
             aria-label="View LinkedIn Profile"
           >
