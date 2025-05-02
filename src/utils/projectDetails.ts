@@ -56,6 +56,17 @@ export const devProjects = [
   },
   {
     id: 4,
+    name: "Vault",
+    description:
+      "An AI-powered personal finance app that helps users track income, monitor expenses, and gain real-time insights to stay effortlessly in control of their finances.",
+    technologies: ["UI/UX Design", "Mobile Experience"],
+    github: "https://www.figma.com/proto/30kJHYDCiedwM1KodRV9oJ/Vault?node-id=0-1&p=f&t=OqECMzZLXXunLY7d-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=15%3A3776",
+    demo: "https://www.figma.com/proto/30kJHYDCiedwM1KodRV9oJ/Vault?node-id=0-1&p=f&t=OqECMzZLXXunLY7d-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=15%3A3776",
+    image: require(".//../../public/projects/Vault.png"),
+    available: true,
+  },
+  {
+    id: 5,
     name: "Photoier",
     description:
       "Designed an AI-driven facial recognition app that automates photo organization and sharing, making it effortless to tag, manage, and share memories seamlessly.",
