@@ -11,6 +11,17 @@ export type ProjectProps = {
 
 export const devProjects = [
   {
+    id: 1,
+    name: "SenseBoard",
+    description:
+      "A sensory-first workspace where creative teams map inspirations, moods, and ideas — aligning on the emotional direction of a product through visual, auditory, and intuitive cues.",
+    technologies: ["EMOTIONAL MAPPING", "PRODUCT STRATEGY"],
+    github: "",
+    demo: "",
+    image: require(".//../../public/projects/SenseBoard.png"),
+    available: false,
+  },
+  {
     id: 0,
     name: "EventDesk",
     description:
