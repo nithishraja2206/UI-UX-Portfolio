@@ -47,7 +47,7 @@ export const devProjects = [
     id: 2,
     name: "HuskyBot App",
     description:
-      "Designed an intuitive user interface for SPOT’s navigation system, enabling seamless gesture and voice-based interaction. Focused on usability, real-time feedback, and efficient human-robot collaboration.",
+      "Designed UI for SPOT’s navigation system with gesture and voice-based controls, emphasizing usability, real-time feedback, and human-robot collaboration.",
     technologies: ["Interaction Design", "Human-Robot UX"],
     github: "https://www.figma.com/design/niQWcKzSMmchYnq4OxDDsO/HuskyBot_Design?node-id=1-1180&t=WRoVrV8ktaWYtJ00-1",
     demo: "https://www.figma.com/design/niQWcKzSMmchYnq4OxDDsO/HuskyBot_Design?node-id=1-1180&t=WRoVrV8ktaWYtJ00-1",
