@@ -96,14 +96,18 @@ const ProjectDetails = () => {
 
         <div>
           <h3 className="my-6">Issues</h3>
-          {project?.problem?.issues.map((item) => (
-            <li className="text-[20px]">{item}</li>
+          {project?.problem?.issues.map((item, index) => (
+            <li key={index} className="text-[20px]">
+              {item}
+            </li>
           ))}
         </div>
         <div>
           <h3 className="my-6">Impact</h3>
-          {project?.problem?.impacts.map((item) => (
-            <li className="text-[20px]">{item}</li>
+          {project?.problem?.impacts.map((item, index) => (
+            <li key={index} className="text-[20px]">
+              {item}
+            </li>
           ))}
         </div>
         <h3 className="mt-10">{project?.problem?.challenge}</h3>
@@ -117,8 +121,10 @@ const ProjectDetails = () => {
             <p className="my-8 text-[20px]"> {project?.tldr}</p>
           </div>
           <div>
-            {project?.objectives.map((item) => (
-              <li className="my-5 text-[20px] ">{item}</li>
+            {project?.objectives.map((item, index) => (
+              <li key={index} className="my-5 text-[20px] ">
+                {item}
+              </li>
             ))}
           </div>
         </div>
@@ -131,8 +137,10 @@ const ProjectDetails = () => {
 
         <div>
           <h3 className="my-6">Foundations</h3>
-          {project?.research?.foundations.map((item) => (
-            <li className="text-[20px]">{item}</li>
+          {project?.research?.foundations.map((item, index) => (
+            <li key={index} className="text-[20px]">
+              {item}
+            </li>
           ))}
         </div>
       </div>
@@ -183,7 +191,9 @@ const ProjectDetails = () => {
             <div>
               <h3 className="my-6">{item?.title}</h3>
               {item?.items.map((item, index) => (
-                <li className="text-[20px]">{item}</li>
+                <li key={index} className="text-[20px]">
+                  {item}
+                </li>
               ))}
             </div>
           </div>
@@ -199,7 +209,7 @@ const ProjectDetails = () => {
           <div>
             <h3 className="my-6">Tasks</h3>
             {project?.testing?.tasks.map((item, index) => (
-              <li className="list-none text-[20px]">
+              <li key={index} className="list-none text-[20px]">
                 Task {index + 1} : {item}
               </li>
             ))}
@@ -207,7 +217,9 @@ const ProjectDetails = () => {
           <div>
             <h3 className="my-6">Feedback</h3>
             {project?.testing?.feedback?.quotes.map((item, index) => (
-              <li className="text-[20px]">{item}</li>
+              <li key={index} className="text-[20px]">
+                {item}
+              </li>
             ))}
           </div>
         </div>
@@ -222,7 +234,9 @@ const ProjectDetails = () => {
         <div>
           <h3 className="my-6">Learnings</h3>
           {project?.reflection?.learnings.map((item, index) => (
-            <li className="text-[20px]">{item}</li>
+            <li key={index} className="text-[20px]">
+              {item}
+            </li>
           ))}
         </div>
       </div>
