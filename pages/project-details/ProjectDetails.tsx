@@ -93,7 +93,7 @@ const ProjectDetails = () => {
                 >
                   <FontAwesomeIcon
                     icon={faFigma}
-                    className=" mr-4 h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px] lg:text-[22px]"
+                    className="mr-4 h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px] lg:text-[22px]"
                     data-blobity
                     data-blobity-radius="38"
                     data-blobity-offset-x="4"
