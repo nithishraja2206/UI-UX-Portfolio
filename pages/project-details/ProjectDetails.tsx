@@ -2,26 +2,34 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  detailedProjectInfo,
-  ProjectInfoData,
-} from "../../src/utils/detailedProjInfo";
-import { imageAnimation, bodyAnimation } from "../../src/utils/animations";
+import { detailedProjectInfo } from "../../src/utils/detailedProjInfo";
+import { bodyAnimation } from "../../src/utils/animations";
 import nlogo from "../../public/nlogo.png";
-import SenseBoard1 from "../../public/SenseBoard1.png";
-import AnimatedBody from "../../src/components/AnimatedBody";
-import AnimatedTitle from "../../src/components/AnimatedTitle";
 import { useEffect, useState } from "react";
 import Footer from "../footer/Footer";
+import { devProjects } from "../../src/utils/projectDetails";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectDetails = () => {
   const router = useRouter();
+  const [available, setAvailable] = useState<boolean>();
+  const [github, setGithub] = useState<string>();
+  const [demo, setDemo] = useState<string>();
   const { slug } = router.query;
 
+  useEffect(() => {
+    const projDetails = devProjects.find((p) => p.slug === slug);
+    setAvailable(projDetails?.available);
+    if (available) {
+      setGithub(projDetails?.github);
+    }
+    setDemo(projDetails?.demo);
+  }, [slug]);
+
   const project = detailedProjectInfo.find((p) => p.slug === slug);
-
   if (!project) return <div>Project not found</div>;
-
   return (
     <div className=" bg-[#0E1016] text-[#e4ded7] ">
       {/* navbar */}
@@ -72,14 +80,80 @@ const ProjectDetails = () => {
       <div className="relative h-[90vh] w-full">
         <div className="absolute inset-0 bg-[url('.//../public/SenseBoard1.png')] bg-cover bg-center opacity-30 blur-sm filter"></div>
         <div className="relative px-32 py-24">
-          <h4 className="mb-24">{project?.timeline}</h4>
-          <p className="mb-1 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[39px] md:mb-4 md:text-[54px] lg:text-[120px]">
+          <h4 className="mb-2">{project?.timeline}</h4>
+          <div className="mb-20">
+            {available ? (
+              <>
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full"
+                  aria-label="Open GitHub Repository"
+                >
+                  <FontAwesomeIcon
+                    icon={faFigma}
+                    className=" mr-4 h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px] lg:text-[22px]"
+                    data-blobity
+                    data-blobity-radius="38"
+                    data-blobity-offset-x="4"
+                    data-blobity-offset-y="4"
+                    data-blobity-magnetic="true"
+                  />
+                </a>
+
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Live Demo"
+                >
+                  <FontAwesomeIcon
+                    icon={faLink}
+                    className="h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px]  lg:text-[22px]"
+                    data-blobity
+                    data-blobity-radius="38"
+                    data-blobity-offset-x="4"
+                    data-blobity-offset-y="4"
+                    data-blobity-magnetic="true"
+                  />
+                </a>
+              </>
+            ) : (
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full"
+                  aria-label="Open GitHub Repository"
+                >
+                  <FontAwesomeIcon
+                    icon={faFigma}
+                    className=" h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px] lg:text-[22px]"
+                    data-blobity
+                    data-blobity-radius="38"
+                    data-blobity-offset-x="4"
+                    data-blobity-offset-y="4"
+                    data-blobity-magnetic="true"
+                  />
+                </a>
+
+                <div className=" rounded-md bg-white px-2 py-1 md:px-2 md:py-1 lg:px-2 lg:py-1">
+                  <h3 className="text-[12px] md:text-[12px] lg:text-[14px] ">
+                    Coming soon
+                  </h3>
+                </div>
+              </div>
+            )}
+          </div>
+          <p className="mb-1 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:mb-3 sm:text-[48px] md:mb-4 md:text-[54px] lg:text-[120px]">
             {project?.name[0]}
           </p>
-          <p className="mb-3 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[39px] md:mb-16 md:text-[54px] lg:text-[54px]">
+          <p className="mb-3 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:mb-10 sm:text-[30px]  md:mb-16 md:text-[54px] lg:text-[54px]">
             {project?.name[1]}
           </p>
-          <h4>{project?.role}</h4>
+          <h5>{project?.role}</h5>
         </div>
       </div>
 
@@ -163,15 +237,16 @@ const ProjectDetails = () => {
               width={900}
               height={800}
             />
-            <p className="w-full text-lg leading-8 text-[#e4ded7] md:w-1/2">
-              {item?.description}
-            </p>
+            <div className="w-full text-[#e4ded7] md:w-1/2">
+              <h3 className="my-6">{item?.title}</h3>
+              <p className=" text-lg leading-8">{item?.description}</p>
+            </div>
           </div>
         ))}
       </div>
 
       {/* core features */}
-      <div className="  px-36 py-16">
+      <div className="px-36 py-16">
         <h2>Core Features</h2>
 
         {project?.core_features.map((item, index) => (

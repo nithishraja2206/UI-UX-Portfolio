@@ -7,6 +7,7 @@ import Image from "next/image";
 import AnimatedTitle from "./AnimatedTitle";
 import AnimatedBody from "./AnimatedBody";
 import { motion } from "framer-motion";
+import { getBlobity } from "../utils/blobityInstance";
 
 const ProjectCard = ({
   id,
@@ -19,6 +20,14 @@ const ProjectCard = ({
   available,
   slug,
 }: ProjectProps) => {
+  const handleMouseEnter = () => {
+    getBlobity().updateOptions({ invert: false, opacity: 0 });
+  };
+
+  const handleMouseLeave = () => {
+    getBlobity().updateOptions({ invert: true, opacity: 1 });
+  };
+
   return (
     <motion.div
       style={
@@ -30,15 +39,30 @@ const ProjectCard = ({
           position: "relative",
         } as React.CSSProperties
       }
-      className={`relative z-10 h-[550px] w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+      className={`relative z-10 h-[550px] w-full cursor-pointer items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
       initial="initial"
       animate="animate"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={(e) => {
+        // If click is inside github/demo link, do nothing here
+        const target = e.target as HTMLElement;
+        if (
+          target.closest('a[href="' + github + '"]') ||
+          target.closest('a[href="' + demo + '"]')
+        ) {
+          return; // let inner link handle navigation
+        }
+        // Otherwise, navigate to project details page
+        window.location.href = `project-details/ProjectDetails?slug=${slug}`;
+      }}
     >
-      <Link
+      {/* <a
         href={`/project-details/ProjectDetails?slug=${slug}`}
         className="absolute inset-0 z-30"
         aria-label={`Go to ${name} details`}
-      />
+        // tabIndex={-1} // optional, to avoid tab focus on overlay link
+      /> */}
 
       <Image
         src={image}
@@ -58,9 +82,16 @@ const ProjectCard = ({
       >
         {available ? (
           <>
-            <Link
+            {/* <Link
               href={github}
               target="_blank"
+              className="rounded-full"
+              aria-label="Open GitHub Repository"
+            > */}
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full"
               aria-label="Open GitHub Repository"
             >
@@ -73,8 +104,16 @@ const ProjectCard = ({
                 data-blobity-offset-y="4"
                 data-blobity-magnetic="true"
               />
-            </Link>
-            <Link href={demo} target="_blank" aria-label="Open Live Demo">
+            </a>
+
+            {/* </Link> */}
+            {/* <Link href={demo} target="_blank" aria-label="Open Live Demo"> */}
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Live Demo"
+            >
               <FontAwesomeIcon
                 icon={faLink}
                 className="h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px]  lg:text-[28px]"
@@ -84,14 +123,22 @@ const ProjectCard = ({
                 data-blobity-offset-y="4"
                 data-blobity-magnetic="true"
               />
-            </Link>
+            </a>
+            {/* </Link> */}
           </>
         ) : (
           <div className="flex items-center justify-center gap-4">
-            <Link
+            {/* <Link
               href={github}
               target="_blank"
               className="mt-1 rounded-full"
+              aria-label="Open GitHub Repository"
+            > */}
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full"
               aria-label="Open GitHub Repository"
             >
               <FontAwesomeIcon
@@ -103,7 +150,8 @@ const ProjectCard = ({
                 data-blobity-offset-y="4"
                 data-blobity-magnetic="true"
               />
-            </Link>
+            </a>
+            {/* </Link> */}
             <div className=" rounded-md bg-white px-2 py-1 md:px-2 md:py-1 lg:px-2 lg:py-1">
               <h3 className="text-[12px] md:text-[12px] lg:text-[14px] ">
                 Coming soon

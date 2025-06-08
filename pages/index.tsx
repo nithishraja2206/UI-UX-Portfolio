@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import useBlobity from "blobity/lib/react/useBlobity";
+import { getBlobity, destroyBlobity } from "../src/utils/blobityInstance";
 
 import Hero from "./hero-section/Hero";
 import { initialBlobityOptions } from "../src/utils/BlobityConfig";
@@ -15,26 +15,26 @@ const Work = dynamic(() => import("./work-section/Work"));
 const About = dynamic(() => import("./about-section/About"));
 
 export default function Home() {
-  const blobityInstance = useBlobity(initialBlobityOptions);
   const [showPreloader, setShowPreloader] = useState(false);
 
   useEffect(() => {
-    if (blobityInstance.current) {
-      // @ts-ignore for debugging purposes
-      window.blobity = blobityInstance.current;
-    }
-  }, [blobityInstance]);
+    const blobity = getBlobity();
+    // @ts-ignore
+    window.blobity = blobity;
+
+    return () => {
+      destroyBlobity();
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
 
     const hasVisited = sessionStorage.getItem("hasVisited");
     if (!hasVisited) {
-      // Show preloader on first visit this session
       setShowPreloader(true);
       sessionStorage.setItem("hasVisited", "true");
 
-      // Hide preloader after some time (e.g., 3 seconds)
       const timer = setTimeout(() => {
         setShowPreloader(false);
       }, 5500);

@@ -4,6 +4,7 @@ export interface ProjectInfoData {
   name: string[];
   role: string;
   timeline: string;
+
   tldr: string;
   context: string[];
   problem: {
@@ -20,6 +21,7 @@ export interface ProjectInfoData {
   design: {
     overview: string;
     details: {
+      title: string;
       image: string;
       description: string;
     }[];
@@ -51,6 +53,7 @@ export const detailedProjectInfo: ProjectInfoData[] = [
     name: ["SenseBoard", " A Sensory OS for Creative Teams"],
     role: "Founder, Product Designer & UX Strategist",
     timeline: "Sept 2023 – Present",
+
     tldr: "A sensory-first design system that helps creative teams map ideas, moods, and inspiration using visual, auditory, and emotional cues. Designed, built, and prototyped the entire product experience from scratch — including interaction models, flow logic, and interface design. Resulted in a functional prototype used in 3 real projects with strong feedback: “More expressive than Notion or Miro.” “Feels like Figma for moods.”",
     context: [
       "Creative thinking doesn't start with timelines. It starts with emotion, mood, and inspiration. Yet most digital tools — like Notion, Trello, or Miro — prioritize structure over spontaneity. They organize tasks, but they ignore the creative spark.",
@@ -92,20 +95,28 @@ export const detailedProjectInfo: ProjectInfoData[] = [
         "Designed the entire product — from system architecture to wireframes, interaction logic, and UI polish.",
       details: [
         {
-          image: require(".//../../public/SenseBoard1.png"),
+          title: "Your Projects Overview — A Visual Entry Point",
+          image: require(".//../../public/Sense1.png"),
           description:
-            "Replace traditional “goal labels” with mood tags like: Calm, Energetic, Focused. Each project has a mood history tracker to show emotional evolution over time.Team alignment visual: a “Mood Aura” bubble that reflects collective creative sentiment.",
+            " This is the home screen of SenseBoard, showing a grid of existing creative projects. Each card provides quick access with date, title, and a short emotional descriptor — for example, the “Serenity Wellness App” is designed to feel intuitively calming.",
         },
         {
-          image: require(".//../../public/SenseBoard1.png"),
+          title: "Project Canvas — Mood Boards for Emotional Alignment",
+          image: require(".//../../public/Sense2.png"),
           description:
-            "Replace traditional “goal labels” with mood tags like: Calm, Energetic, Focused. Each project has a mood history tracker to show emotional evolution over time.Team alignment visual: a “Mood Aura” bubble that reflects collective creative sentiment.",
+            " Inside each project, users can create multiple Mood Boards that reflect various aspects of creative intent — from visual language to interaction concepts. The “Calm” mood tag here governs the project's emotional direction and is visible in the top bar.",
+        },
+        {
+          title: "Mood Board Detail — Multisensory Design in Action",
+          image: require(".//../../public/Sense3.png"),
+          description:
+            "  This screen shows a live Mood Board in action. Users can add sketches, sounds, images, or thoughts — each tagged by mood and intensity. A breathing animation helps visualize calmness, while gesture and sound concepts are integrated directly into the creative space.",
         },
       ],
     },
     core_features: [
       {
-        image: require(".//../../public/SenseBoard1.png"),
+        image: require(".//../../public/Sense4.png"),
         title: "Mood Mapping",
         items: [
           "Mood tags like Calm, Energetic, Focused instead of goal labels",
@@ -114,7 +125,7 @@ export const detailedProjectInfo: ProjectInfoData[] = [
         ],
       },
       {
-        image: require(".//../../public/SenseBoard1.png"),
+        image: require(".//../../public/Sense5.png"),
         title: "Sensory Boards",
         items: [
           "Visuals / gradients",
@@ -125,7 +136,7 @@ export const detailedProjectInfo: ProjectInfoData[] = [
         ],
       },
       {
-        image: require(".//../../public/SenseBoard1.png"),
+        image: require(".//../../public/Sense6.png"),
         title: "Flow Mapping Canvas",
         items: [
           "Visualizes mood transitions like Calm → Focused → Chaotic",
@@ -134,7 +145,7 @@ export const detailedProjectInfo: ProjectInfoData[] = [
         ],
       },
       {
-        image: require(".//../../public/SenseBoard1.png"),
+        image: require(".//../../public/Sense7.png"),
         title: "Interaction Patterns + Sound Layers",
         items: [
           "Custom gesture library (e.g., 'swipe to calm', 'tap to pivot')",
