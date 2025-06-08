@@ -17,6 +17,7 @@ const ProjectCard = ({
   demo,
   image,
   available,
+  slug,
 }: ProjectProps) => {
   return (
     <motion.div
@@ -33,6 +34,12 @@ const ProjectCard = ({
       initial="initial"
       animate="animate"
     >
+      <Link
+        href={`/project-details/ProjectDetails?slug=${slug}`}
+        className="absolute inset-0 z-30"
+        aria-label={`Go to ${name} details`}
+      />
+
       <Image
         src={image}
         alt={name}

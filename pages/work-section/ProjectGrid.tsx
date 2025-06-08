@@ -43,6 +43,7 @@ const ProjectGrid = () => {
             demo={project.demo}
             image={project.image}
             available={project.available}
+            slug={project.slug}
           />
         ))}
       </div>

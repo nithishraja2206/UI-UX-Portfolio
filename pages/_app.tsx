@@ -2,6 +2,7 @@ import "../styles/global.css"; // Ensure global styles are imported here
 import type { AppProps } from "next/app";
 import "../pages/animations/PreLoader/preloader.css";
 import "../pages/animations/animate.css";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

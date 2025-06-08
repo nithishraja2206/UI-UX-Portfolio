@@ -7,6 +7,7 @@ export type ProjectProps = {
   demo: string;
   image: string;
   available: boolean;
+  slug: string;
 };
 
 export const devProjects = [
@@ -20,6 +21,7 @@ export const devProjects = [
     demo: "https://senseboard.onrender.com/",
     image: require(".//../../public/projects/SenseBoard.png"),
     available: true,
+    slug: "senseboard",
   },
   {
     id: 0,
@@ -27,10 +29,12 @@ export const devProjects = [
     description:
       "A full-featured event management SaaS platform enabling seamless collaboration among organizers, hosts, vendors, and attendees for efficient planning and execution.",
     technologies: ["Product Design", "Design Systems"],
-    github: "https://www.figma.com/proto/JajUJcuV1zxXwybzMNBsh9/Eventdesk_Design?node-id=1213-352&t=yEaXgV064bbM5FdM-1&scaling=scale-down-width&content-scaling=fixed&page-id=750%3A1487",
+    github:
+      "https://www.figma.com/proto/JajUJcuV1zxXwybzMNBsh9/Eventdesk_Design?node-id=1213-352&t=yEaXgV064bbM5FdM-1&scaling=scale-down-width&content-scaling=fixed&page-id=750%3A1487",
     demo: "https://eventdesk.io/",
     image: require(".//../../public/projects/Eventdesk.png"),
     available: true,
+    slug: "eventdesk",
   },
   {
     id: 1,
@@ -42,6 +46,7 @@ export const devProjects = [
     demo: "https://www.mtu.edu/alumni/",
     image: require(".//../../public/projects/MichiganTech.png"),
     available: true,
+    slug: "michiganTech",
   },
   {
     id: 2,
@@ -49,10 +54,12 @@ export const devProjects = [
     description:
       "Designed UI for SPOT’s navigation system with gesture and voice-based controls, emphasizing usability, real-time feedback, and human-robot collaboration.",
     technologies: ["Interaction Design", "Human-Robot UX"],
-    github: "https://www.figma.com/design/niQWcKzSMmchYnq4OxDDsO/HuskyBot_Design?node-id=1-1180&t=WRoVrV8ktaWYtJ00-1",
+    github:
+      "https://www.figma.com/design/niQWcKzSMmchYnq4OxDDsO/HuskyBot_Design?node-id=1-1180&t=WRoVrV8ktaWYtJ00-1",
     demo: "https://www.figma.com/design/niQWcKzSMmchYnq4OxDDsO/HuskyBot_Design?node-id=1-1180&t=WRoVrV8ktaWYtJ00-1",
     image: require(".//../../public/projects/HuskyBot.png"),
     available: false,
+    slug: "huskyBot",
   },
   {
     id: 3,
@@ -60,10 +67,12 @@ export const devProjects = [
     description:
       "Designed a full-scale e-commerce platform for branded merchandise, designed to ensure seamless navigation, responsive layouts, and enhanced user engagement.",
     technologies: ["Experience Design", "E-Commerce UX"],
-    github: "https://www.figma.com/proto/0gC8wcT1Ss1JYjJ1MnWCIE/Madrasda-Design?node-id=2-2298&t=zJg9WTm5uE2kvqHN-1",
+    github:
+      "https://www.figma.com/proto/0gC8wcT1Ss1JYjJ1MnWCIE/Madrasda-Design?node-id=2-2298&t=zJg9WTm5uE2kvqHN-1",
     demo: "https://madrasda.com/",
     image: require(".//../../public/projects/MadrasDa.png"),
     available: true,
+    slug: "madrasDa",
   },
   {
     id: 4,
@@ -71,10 +80,12 @@ export const devProjects = [
     description:
       "An AI-powered personal finance app that helps users track income, monitor expenses, and gain real-time insights to stay effortlessly in control of their finances.",
     technologies: ["UI/UX Design", "Mobile Experience"],
-    github: "https://www.figma.com/proto/30kJHYDCiedwM1KodRV9oJ/Vault?node-id=0-1&p=f&t=OqECMzZLXXunLY7d-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=15%3A3776",
+    github:
+      "https://www.figma.com/proto/30kJHYDCiedwM1KodRV9oJ/Vault?node-id=0-1&p=f&t=OqECMzZLXXunLY7d-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=15%3A3776",
     demo: "https://www.figma.com/proto/30kJHYDCiedwM1KodRV9oJ/Vault?node-id=0-1&p=f&t=OqECMzZLXXunLY7d-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=15%3A3776",
     image: require(".//../../public/projects/Vault.png"),
     available: true,
+    slug: "vault",
   },
   {
     id: 5,
@@ -82,10 +93,12 @@ export const devProjects = [
     description:
       "Designed an AI-driven facial recognition app that automates photo organization and sharing, making it effortless to tag, manage, and share memories seamlessly.",
     technologies: ["Product Design", "AI Interaction"],
-    github: "https://www.figma.com/proto/ZkPlbafeVyW1Id4YIa2ZIi/photoier-app?node-id=8-20&t=PegAB3J0SFKafWqq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A20",
+    github:
+      "https://www.figma.com/proto/ZkPlbafeVyW1Id4YIa2ZIi/photoier-app?node-id=8-20&t=PegAB3J0SFKafWqq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A20",
     demo: "https://www.figma.com/proto/ZkPlbafeVyW1Id4YIa2ZIi/photoier-app?node-id=8-20&t=PegAB3J0SFKafWqq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A20",
     image: require(".//../../public/projects/Photoier.png"),
     available: true,
+    slug: "photoier",
   },
   // {
   //   id: 4,
