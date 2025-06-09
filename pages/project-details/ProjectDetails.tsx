@@ -30,6 +30,11 @@ const ProjectDetails = () => {
 
   const project = detailedProjectInfo.find((p) => p.slug === slug);
   if (!project) return <div>Project not found</div>;
+
+  const usabilityBg = project?.slug === "michiganTech" ? "bg-[#0E1016]" : "bg-[#1A1E28]";
+  const reflectionBg = project?.slug === "michiganTech" ? "bg-[#1A1E28]" : "bg-[#0E1016]";
+
+
   return (
     <div className=" bg-[#0E1016] text-[#e4ded7] ">
       {/* navbar */}
@@ -284,11 +289,7 @@ const ProjectDetails = () => {
       )}
 
       {/* usablity testing */}
-      <div
-        className={`$${
-          project?.slug === "michiganTech" ? "bg-[#262a36]" : "bg-[#1a1e28]"
-        } px-36 py-16`}
-      >
+      <div className={`${usabilityBg} px-36 py-16`}>
         <h2 className="mb-7"> Usability Testing</h2>
         <p className="text-[20px]">{project?.testing?.scenario}</p>
 
@@ -313,7 +314,7 @@ const ProjectDetails = () => {
       </div>
 
       {/* reflection */}
-      <div className={`${project?.slug === "michiganTech" ? "bg-[#13151d]" : "bg-[#0E1016]"} px-36 py-16`}>
+      <div className={`${reflectionBg} px-36 py-16`}>
         <h2 className="mb-7"> Reflection — What I learned</h2>
         <p className="text-[20px]">{project?.reflection?.summary}</p>
 
