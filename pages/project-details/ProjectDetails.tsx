@@ -26,7 +26,7 @@ const ProjectDetails = () => {
       setGithub(projDetails?.github);
     }
     setDemo(projDetails?.demo);
-  }, [slug]);
+  }, [available, slug]);
 
   const project = detailedProjectInfo.find((p) => p.slug === slug);
   if (!project) return <div>Project not found</div>;
@@ -78,7 +78,14 @@ const ProjectDetails = () => {
 
       {/* landing image and title */}
       <div className="relative h-[90vh] w-full">
-        <div className="absolute inset-0 bg-[url('.//../public/SenseBoard1.png')] bg-cover bg-center opacity-30 blur-sm filter"></div>
+        <div className="absolute inset-0 opacity-30 blur-sm filter">
+          <Image
+            src={project?.banner || "/default-banner.png"}
+            alt="Project Banner"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <div className="relative px-32 py-24">
           <h4 className="mb-2">{project?.timeline}</h4>
           <div className="mb-20">
@@ -110,7 +117,7 @@ const ProjectDetails = () => {
                 >
                   <FontAwesomeIcon
                     icon={faLink}
-                    className="h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px]  lg:text-[22px]"
+                    className="h-[20px] w-[20px] rounded-full border border-white p-2 text-[20px] md:h-[20px] md:w-[20px] md:text-[24px] lg:h-[22px] lg:w-[22px] lg:text-[22px]"
                     data-blobity
                     data-blobity-radius="38"
                     data-blobity-offset-x="4"
@@ -130,7 +137,7 @@ const ProjectDetails = () => {
                 >
                   <FontAwesomeIcon
                     icon={faFigma}
-                    className=" h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px] lg:text-[22px]"
+                    className="h-[30px] w-[30px] rounded-full bg-white p-2 text-[20px] md:h-[30px] md:w-[30px] md:text-[24px] lg:h-[35px] lg:w-[35px] lg:text-[22px]"
                     data-blobity
                     data-blobity-radius="38"
                     data-blobity-offset-x="4"
@@ -139,10 +146,8 @@ const ProjectDetails = () => {
                   />
                 </a>
 
-                <div className=" rounded-md bg-white px-2 py-1 md:px-2 md:py-1 lg:px-2 lg:py-1">
-                  <h3 className="text-[12px] md:text-[12px] lg:text-[14px] ">
-                    Coming soon
-                  </h3>
+                <div className="rounded-md bg-white px-2 py-1 md:px-2 md:py-1 lg:px-2 lg:py-1">
+                  <h3 className="text-[12px] md:text-[12px] lg:text-[14px]">Coming soon</h3>
                 </div>
               </div>
             )}
@@ -150,7 +155,7 @@ const ProjectDetails = () => {
           <p className="mb-1 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:mb-3 sm:text-[48px] md:mb-4 md:text-[54px] lg:text-[120px]">
             {project?.name[0]}
           </p>
-          <p className="mb-3 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:mb-10 sm:text-[30px]  md:mb-16 md:text-[54px] lg:text-[54px]">
+          <p className="mb-3 text-[30px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:mb-10 sm:text-[30px] md:mb-16 md:text-[54px] lg:text-[54px]">
             {project?.name[1]}
           </p>
           <h5>{project?.role}</h5>
@@ -246,37 +251,44 @@ const ProjectDetails = () => {
       </div>
 
       {/* core features */}
-      <div className="px-36 py-16">
-        <h2>Core Features</h2>
-
-        {project?.core_features.map((item, index) => (
-          <div
-            key={index}
-            className={`flex flex-col-reverse items-center justify-between gap-12 py-8 sm:flex-col md:flex-row ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            <Image
-              className=" lg:w-1/2"
-              src={item.image}
-              alt="SenseBoard"
-              width={400}
-              height={300}
-            />
-            <div>
-              <h3 className="my-6">{item?.title}</h3>
-              {item?.items.map((item, index) => (
-                <li key={index} className="text-[20px]">
-                  {item}
-                </li>
-              ))}
+      {Array.isArray(project.core_features) && project.core_features.length > 0 && (
+        <div className="px-36 py-16">
+          <h2>Core Features</h2>
+          {project.core_features.map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-col-reverse items-center justify-between gap-12 py-8 sm:flex-col md:flex-row ${
+                index % 2 !== 0 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              <Image
+                className="lg:w-1/2"
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={300}
+              />
+              <div>
+                <h3 className="my-6">{item.title}</h3>
+                <ul>
+                  {item.items.map((point, i) => (
+                    <li key={i} className="text-[20px]">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
       {/* usablity testing */}
-      <div className="bg-[#1a1e28] px-36 py-16">
+      <div
+        className={`$${
+          project?.slug === "michiganTech" ? "bg-[#262a36]" : "bg-[#1a1e28]"
+        } px-36 py-16`}
+      >
         <h2 className="mb-7"> Usability Testing</h2>
         <p className="text-[20px]">{project?.testing?.scenario}</p>
 
@@ -301,8 +313,7 @@ const ProjectDetails = () => {
       </div>
 
       {/* reflection */}
-
-      <div className=" px-36 py-16">
+      <div className={`${project?.slug === "michiganTech" ? "bg-[#13151d]" : "bg-[#0E1016]"} px-36 py-16`}>
         <h2 className="mb-7"> Reflection — What I learned</h2>
         <p className="text-[20px]">{project?.reflection?.summary}</p>
 
