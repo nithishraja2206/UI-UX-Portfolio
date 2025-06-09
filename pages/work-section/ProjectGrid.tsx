@@ -1,7 +1,6 @@
 import ProjectCard from "../../src/components/ProjectCard";
 import {
   devProjects,
-  designProjects,
   ProjectProps,
 } from "../../src/utils/projectDetails";
 import { useState } from "react";
