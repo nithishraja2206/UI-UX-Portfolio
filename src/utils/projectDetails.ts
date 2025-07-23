@@ -12,7 +12,7 @@ export type ProjectProps = {
 
 export const devProjects = [
   {
-    id: 1,
+    id: 0,
     name: "SenseBoard",
     description:
       "A sensory-first workspace where creative teams map inspirations, moods, and ideas — aligning on the emotional direction of a product through visual, auditory, and intuitive cues.",
@@ -24,7 +24,19 @@ export const devProjects = [
     slug: "senseboard",
   },
   {
-    id: 0,
+    id: 1,
+    name: "Splendle",
+    description:
+      "A simple, elegant expense tracker for personal budgeting and shared events — track daily spending, split trip costs, and stay financially organized with ease.",
+    technologies: ["UX DESIGN", "INTERFACE SYSTEMS"],
+    github: "https://senseboard.onrender.com/",
+    demo: "https://www.figma.com/proto/YZThtAY9D7E9HdeVydPjlK/Splendle?node-id=185-1102&p=f&t=FRjSI4OpX9hLGWwZ-1&scaling=min-zoom&content-scaling=fixed&page-id=185%3A1101&starting-point-node-id=185%3A1102",
+    image: require(".//../../public/projects/Spendle.png"),
+    available: false,
+    slug: "spendle",
+  },
+  {
+    id: 2,
     name: "EventDesk",
     description:
       "A full-featured event management SaaS platform enabling seamless collaboration among organizers, hosts, vendors, and attendees for efficient planning and execution.",
@@ -37,7 +49,7 @@ export const devProjects = [
     slug: "eventdesk",
   },
   {
-    id: 1,
+    id: 3,
     name: "Michigan Tech",
     description:
       "Redesigned university websites and departmental microsites to enhance search visibility, improve usability, and boost user engagement.",
@@ -49,7 +61,7 @@ export const devProjects = [
     slug: "michiganTech",
   },
   {
-    id: 2,
+    id: 4,
     name: "HuskyBot App",
     description:
       "Designed UI for SPOT’s navigation system with gesture and voice-based controls, emphasizing usability, real-time feedback, and human-robot collaboration.",
@@ -62,7 +74,7 @@ export const devProjects = [
     slug: "huskyBot",
   },
   {
-    id: 3,
+    id: 5,
     name: "MadrasDa",
     description:
       "Designed a full-scale e-commerce platform for branded merchandise, designed to ensure seamless navigation, responsive layouts, and enhanced user engagement.",
@@ -75,7 +87,7 @@ export const devProjects = [
     slug: "madrasDa",
   },
   {
-    id: 4,
+    id: 6,
     name: "Vault",
     description:
       "An AI-powered personal finance app that helps users track income, monitor expenses, and gain real-time insights to stay effortlessly in control of their finances.",
@@ -88,7 +100,7 @@ export const devProjects = [
     slug: "vault",
   },
   {
-    id: 5,
+    id: 7,
     name: "Photoier",
     description:
       "Designed an AI-driven facial recognition app that automates photo organization and sharing, making it effortless to tag, manage, and share memories seamlessly.",
