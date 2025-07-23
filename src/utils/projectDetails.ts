@@ -29,7 +29,7 @@ export const devProjects = [
     description:
       "A simple, elegant expense tracker for personal budgeting and shared events — track daily spending, split trip costs, and stay financially organized with ease.",
     technologies: ["UX DESIGN", "INTERFACE SYSTEMS"],
-    github: "https://senseboard.onrender.com/",
+    github: "https://www.figma.com/proto/YZThtAY9D7E9HdeVydPjlK/Splendle?node-id=185-1102&p=f&t=FRjSI4OpX9hLGWwZ-1&scaling=min-zoom&content-scaling=fixed&page-id=185%3A1101&starting-point-node-id=185%3A1102",
     demo: "https://www.figma.com/proto/YZThtAY9D7E9HdeVydPjlK/Splendle?node-id=185-1102&p=f&t=FRjSI4OpX9hLGWwZ-1&scaling=min-zoom&content-scaling=fixed&page-id=185%3A1101&starting-point-node-id=185%3A1102",
     image: require(".//../../public/projects/Spendle.png"),
     available: false,
